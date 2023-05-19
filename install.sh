@@ -141,6 +141,9 @@ DNSIP="$(lxc network get lxdbr0 ipv4.address)"
 DNSIP="${DNSIP%/*}"
 # Create the service file
 _template templates/lxd-dns-lxdbr0.service /etc/systemd/system/lxd-dns-lxdbr0.service
+# Create the service file
+_template templates/vmtree-control@.service /etc/systemd/system/vmtree-control@.service --mode=644
+_template templates/vmtree-control.socket /etc/systemd/system/vmtree-control.socket --mode=644
 # Make systemd learn about our new service
 sudo systemctl daemon-reload
 # Start the service, now and forever

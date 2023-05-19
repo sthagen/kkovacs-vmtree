@@ -1,0 +1,11 @@
+[Unit]
+Description=vmtree control socket
+Requires=lxd-dns-lxdbr0.service
+
+[Socket]
+ListenStream=1111
+BindToDevice=lxdbr0
+Accept=yes
+
+[Install]
+WantedBy=sockets.target

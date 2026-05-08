@@ -6,7 +6,7 @@
 - 🌐 **Automatic Networking:** Every VM gets a dedicated HTTPS subdomain via Caddy.
 - 💾 **Smart Storage:** Shared `/persist/` directory for data that survives VM resets.
 - 🧹 **Auto-Cleanup:** VMs are ephemeral and automatically destroyed nightly to save resources.
-- 🛠️ **Pure Simplicity:** Written in Bash; uses LXD/Incus containers (high density) or QEMU VMs (full isolation). MIT license.
+- 🛠️ **Pure Simplicity:** Written in Bash; uses LXD/Incus containers (high density) or QEMU VMs (full isolation).
 - 🤖 **Not post-AI slop:** It's how our team survived COVID's years of WFH. :)
 
 # README.md

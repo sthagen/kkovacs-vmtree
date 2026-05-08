@@ -1,8 +1,16 @@
 # 🌳VMTREE is easy ephemeral VMs on your own server.
 
-These scripts turn a server (or VM) into a "VM tree", on which you can easily start up ephemeral VMs. Originally for our **self-hosted** [cloud development environments](https://www.usenimbus.com/post/the-guide-to-cloud-dev-environments), but usable in many ways: in a **CI/CD pipeline**, as **acceptance testing environments**, for **demoing purposes**, or really anything you can use an Ubuntu VM for.
+**TL;DR:** A lightweight, self-hosted alternative to GitPod or GitHub Codespaces, 🌳 **VMTREE** transforms a single Ubuntu server into a self-hosted factory for ephemeral VMs. Provision a fresh VM instantly just by SSH-ing into a new subdomain (e.g., `ssh demo-foo.example.com`). No Docker/K8s complexity—just bash and SSH.
 
-With 🌳VMTREE, you provision a new VM just by SSH-ing into it: `ssh demo-foo.example.com` starts up a fresh VM called `demo-foo` and connects to it. Running `sudo touch /killme` destroys it.
+> - 🚀 **Instant Provisioning:** `ssh <name>.example.com` creates and connects you to a new VM.
+> - 🌐 **Automatic Networking:** Every VM gets a dedicated HTTPS subdomain via Caddy.
+> - 💾 **Smart Storage:** Shared `/persist/` directory for data that survives VM resets.
+> - 🧹 **Auto-Cleanup:** VMs are ephemeral and automatically destroyed nightly to save resources.
+> - 🛠️ **Pure Simplicity:** Written in Bash; uses LXD/Incus containers (high density) or QEMU VMs (full isolation). MIT license.
+
+# README.md
+
+These scripts turn a server (or VM) into a "VM tree", on which you can easily start up ephemeral VMs. Originally for our **self-hosted** [cloud development environments](https://www.usenimbus.com/post/the-guide-to-cloud-dev-environments), but usable in many ways: in a **CI/CD pipeline**, as **acceptance testing environments**, for **demoing purposes**, or really anything you can use an Ubuntu VM for.
 
 We didn't develop this as a product, but to scratch our own itch as a DevOps team. We've been using this (and its previous in-house version) for 5+ years as our dev environments, and we ❤️ that fresh VMs just _"grow on the VM tree for easy picking"_. It's literally how our team survived COVID's years of WFH. :)
 

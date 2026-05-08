@@ -1,12 +1,13 @@
 # 🌳VMTREE is easy ephemeral VMs on your own server.
 
-**TL;DR:** A lightweight, self-hosted alternative to GitPod or GitHub Codespaces, 🌳 **VMTREE** transforms a single Ubuntu server into a self-hosted factory for ephemeral VMs. Provision a fresh VM instantly just by SSH-ing into a new subdomain (e.g., `ssh demo-foo.example.com`). No Docker/K8s complexity—just bash and SSH.
+**TL;DR:** A lightweight, self-hosted alternative to GitPod or GitHub Codespaces, 🌳 **VMTREE** transforms a single Ubuntu server into a self-hosted factory for ephemeral dev VMs. Provision a fresh VM instantly just by SSH-ing into a new subdomain (e.g., `ssh demo-foo.example.com`).
 
-> - 🚀 **Instant Provisioning:** `ssh <name>.example.com` creates and connects you to a new VM.
-> - 🌐 **Automatic Networking:** Every VM gets a dedicated HTTPS subdomain via Caddy.
-> - 💾 **Smart Storage:** Shared `/persist/` directory for data that survives VM resets.
-> - 🧹 **Auto-Cleanup:** VMs are ephemeral and automatically destroyed nightly to save resources.
-> - 🛠️ **Pure Simplicity:** Written in Bash; uses LXD/Incus containers (high density) or QEMU VMs (full isolation). MIT license.
+- 🚀 **Instant Provisioning:** `ssh <name>.example.com` creates and connects you to a new VM.
+- 🌐 **Automatic Networking:** Every VM gets a dedicated HTTPS subdomain via Caddy.
+- 💾 **Smart Storage:** Shared `/persist/` directory for data that survives VM resets.
+- 🧹 **Auto-Cleanup:** VMs are ephemeral and automatically destroyed nightly to save resources.
+- 🛠️ **Pure Simplicity:** Written in Bash; uses LXD/Incus containers (high density) or QEMU VMs (full isolation). MIT license.
+- 🤖 **Not post-AI slop:** It's how our team survived COVID's years of WFH. :)
 
 # README.md
 

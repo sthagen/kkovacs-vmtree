@@ -11,9 +11,9 @@
 
 # README.md
 
-These scripts turn a server (or VM) into a "VM tree", on which you can easily start up ephemeral VMs. Originally for our **self-hosted** [cloud development environments](https://www.usenimbus.com/post/the-guide-to-cloud-dev-environments), but usable in many ways: in a **CI/CD pipeline**, as **acceptance testing environments**, for **demoing purposes**, or really anything you can use an Ubuntu environment for.
+These scripts turn a server (or VM) into a bountiful 🌳 "VM tree", on which you can easily start up ephemeral VMs. Originally for our **self-hosted** cloud development environments, but usable in many ways: in a **CI/CD pipeline**, as **acceptance testing environments**, for **demoing purposes**, or really anything you can use an Ubuntu environment for.
 
-We didn't develop this as a product, but to scratch our own itch as a DevOps team. We've been using this (and its previous in-house version) for 8+ years as our dev environments, and we ❤️ that fresh VMs just _"grow on the VM tree for easy picking"_. It's literally how our team survived COVID's years of WFH. 😷
+We didn't develop this as a product, but to scratch our own itch as a DevOps team. We've been using this (and its previous in-house version) for 8+ years as our dev environments, and we ❤️ that fresh VMs just _"grow on the VM tree for easy picking"_. It's literally how our team survived COVID's years of WFH. :)
 
 It's the same philosophy as [GitPod](https://www.gitpod.io/), [DevPod](https://devpod.sh/), [CodeSpaces](https://github.com/features/codespaces), [CodeSandbox](https://codesandbox.io/) or [Nimbus](https://www.usenimbus.com/), but **self-hosted**, free (as in beer and speech) and probably a bit more old-school:
 - uses just `ssh`,

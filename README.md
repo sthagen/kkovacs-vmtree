@@ -1,6 +1,6 @@
 # 🌳VMTREE is easy ephemeral VMs on your own server.
 
-**TL;DR:** A lightweight, self-hosted alternative to GitPod or GitHub Codespaces, 🌳 **VMTREE** transforms a single Ubuntu server into a self-hosted factory for ephemeral dev VMs. Provision a fresh VM instantly just by SSH-ing into a new subdomain (e.g., `ssh demo-foo.example.com`).
+**TL;DR:** A lightweight, self-hosted alternative to GitPod or GitHub Codespaces. Provision a fresh VM instantly just by SSH-ing into a new subdomain (e.g., `ssh demo-foo.example.com`).
 
 - 🚀 **Instant Provisioning:** `ssh <name>.example.com` creates and connects you to a new VM.
 - 🌐 **Automatic Networking:** Every VM gets a dedicated HTTPS subdomain via Caddy.
